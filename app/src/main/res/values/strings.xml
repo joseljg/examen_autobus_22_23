@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">examen_autobus_22_23</string>
+    <string name="descripcion">foto autobus</string>
+    <string name="num_pasajeros">Numero de pasajeros</string>
+    <string name="temporada">Elige temporada</string>
+    <string name="serviciosSI">Tiene servicios</string>
+    <string name="serviciosNO">No Tiene servicios</string>
+    <string name="botonMostrar">Mostrar Ingresos y gastos</string>
+    <string name="totalganancias">Total disponible</string>
+    <string name="totalperdidas">Total perdidas</string>
+    <string name="siguiente">Siguiente</string>
+</resources>
