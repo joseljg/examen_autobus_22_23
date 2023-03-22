@@ -21,8 +21,8 @@
 
     <EditText
         android:id="@+id/edt_num_pasajeros"
-        android:layout_width="228dp"
-        android:layout_height="61dp"
+        android:layout_width="105dp"
+        android:layout_height="67dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="52dp"
         android:layout_marginEnd="49dp"
@@ -88,6 +88,7 @@
         android:layout_marginBottom="23dp"
         android:backgroundTint="#673AB7"
         android:text="@string/botonMostrar"
+        android:onClick="mostrar_ingresos_gastos"
         app:layout_constraintBottom_toTopOf="@+id/txt_ganancias"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -123,9 +124,12 @@
         android:id="@+id/bt_siguiente"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginBottom="16dp"
+        android:enabled="false"
         android:text="@string/siguiente"
+        android:onClick="ir_a_siguiente_pantalla"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

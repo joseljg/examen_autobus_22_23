@@ -9,4 +9,17 @@
     <string name="totalganancias">Total disponible</string>
     <string name="totalperdidas">Total perdidas</string>
     <string name="siguiente">Siguiente</string>
+    <string name="titulo_pantalla2">Contabilidad</string>
+    <string name="texto_ingresos_pantalla2">Total ingresos:</string>
+    <string name="texto_ingresos_pantalla2_numero">0.0</string>
+    <string name="texto_gastos_pantalla2">Total gastos:</string>
+    <string name="texto_gastos_pantalla2_numero">0.0</string>
+    <string name="texto_ganado_pantalla2">Total ganado:</string>
+    <string name="texto_ganado_pantalla2_numero">0.0</string>
+    <string name="iva_aplicado">IVA APLICADO </string>
+    <string name="aplicar_iva">APLICAR IVA </string>
+    <string name="texto_impuesto_pantalla2">Total impuestos:</string>
+    <string name="texto_impuesto_pantalla2_numero">0.0</string>
+    <string name="texto_total_neto_pantalla2">Total neto:</string>
+    <string name="texto_total_neto_pantalla2_numero">0.0</string>
 </resources>

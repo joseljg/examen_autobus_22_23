@@ -6,4 +6,165 @@
     android:layout_height="match_parent"
     tools:context=".Pantalla2Activity">
 
+    <TextView
+        android:id="@+id/txt_titulo_pantalla2"
+        android:layout_width="386dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:text="@string/titulo_pantalla2"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_p2_ingresos"
+        android:layout_width="161dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/texto_ingresos_pantalla2"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_titulo_pantalla2" />
+
+    <TextView
+        android:id="@+id/txt_p2_ingresos_numero"
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:layout_marginStart="36dp"
+        android:text="@string/texto_ingresos_pantalla2_numero"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_p2_ingresos"
+        app:layout_constraintStart_toEndOf="@+id/txt_p2_ingresos" />
+
+    <TextView
+        android:id="@+id/txt_p2_gastos"
+        android:layout_width="161dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/texto_gastos_pantalla2"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_p2_ingresos" />
+
+    <TextView
+        android:id="@+id/txt_p2_gastos_numero"
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:layout_marginStart="36dp"
+        android:text="@string/texto_gastos_pantalla2_numero"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_p2_gastos"
+        app:layout_constraintStart_toEndOf="@+id/txt_p2_gastos" />
+
+    <TextView
+        android:id="@+id/txt_p2_ganado"
+        android:layout_width="161dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="11dp"
+        android:text="@string/texto_ganado_pantalla2"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_p2_gastos" />
+
+    <TextView
+        android:id="@+id/txt_p2_ganado_numero"
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:layout_marginStart="36dp"
+        android:text="@string/texto_gastos_pantalla2_numero"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_p2_ganado"
+        app:layout_constraintStart_toEndOf="@+id/txt_p2_ganado" />
+
+    <EditText
+        android:id="@+id/edt_iva"
+        android:layout_width="169dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="@string/iva_aplicado"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_p2_ganado" />
+
+    <Button
+        android:id="@+id/bt_aplicar_iva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/aplicar_iva"
+        android:onClick="aplicar_iva"
+        app:layout_constraintBaseline_toBaselineOf="@+id/edt_iva"
+        app:layout_constraintStart_toEndOf="@+id/edt_iva" />
+
+    <TextView
+        android:id="@+id/txt_p2_impuestos"
+        android:layout_width="210dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="33dp"
+        android:text="@string/texto_impuesto_pantalla2"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_iva" />
+
+    <TextView
+        android:id="@+id/txt_p2_impuestos_numero"
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:layout_marginStart="36dp"
+        android:text="@string/texto_gastos_pantalla2_numero"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_p2_impuestos"
+        app:layout_constraintStart_toEndOf="@+id/txt_p2_impuestos"
+        app:layout_constraintTop_toTopOf="@+id/txt_p2_impuestos"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/txt_p2_total_neto"
+        android:layout_width="210dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="11dp"
+        android:text="@string/texto_total_neto_pantalla2"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_p2_impuestos" />
+
+    <TextView
+        android:id="@+id/txt_p2_total_neto_numero"
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:layout_marginStart="36dp"
+        android:text="@string/texto_total_neto_pantalla2_numero"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_p2_total_neto"
+        app:layout_constraintStart_toEndOf="@+id/txt_p2_total_neto"
+        app:layout_constraintTop_toTopOf="@+id/txt_p2_total_neto" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
